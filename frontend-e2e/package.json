@@ -1,0 +1,10 @@
+{
+  "name": "@interactive-grid/frontend-e2e",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "implicitDependencies": [
+      "@interactive-grid/frontend"
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+/* Airtable-style Flex Grid */
+.grid-wrapper {
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 960px;
+    margin: 2rem auto;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.grid-header {
+    display: flex;
+    background-color: #f5f5f5;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+.grid-row {
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+    border-bottom: 1px solid #eee;
+}
+
+.grid-cell {
+    flex: 1;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.grid-cell.header {
+    font-weight: bold;
+    background-color: #fafafa;
+}
+
+.grid-cell.editing {
+    background-color: #fdfdfd;
+    border: 1px solid #bbb;
+    box-shadow: 0 0 0 2px #d5d5ff;
+    border-radius: 6px;
+}
+
+.edit-icon {
+    font-size: 13px;
+    color: #999;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    margin-left: auto;
+}
+
+.grid-cell:hover .edit-icon {
+    opacity: 1;
+}
+
+.grid-cell img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 6px;
+}
+
+.text-center {
+    text-align: center;
+}
